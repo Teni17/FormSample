@@ -8,13 +8,48 @@
 </head>
 
 <body>
-<h2>starter project</h2>
+<fieldset id="welcome">
+    <legend>Welcome to useless Web Site</legend>
+    <button type="button" id="button1">Click for New User</button>
+    <button type="button" id="button2">Click for Existing User</button>
 
-<button type="button" id="button1">Button</button>
+</fieldset>
+<fieldset id="newuser">
+
+    <legend>New User</legend>
+
+    <label for="username"> Username:</label> 
+    <input name="username" id="username" />
+    
+    <label for="password">Password:</label>
+    <input name="password" id="password" />
+
+    <br>
+
+     <label for="city">City:</label>
+    <input name="city" id="city" />
+      
+	<label for="state">State (abbr.):</label>
+    <input name="state" id="state" />
+
+    <button onclick="newAlert()" id="newlogin">Login</button>
+
+</fieldset>
 <div>
-    <br />
-    <input type="text" val="starting value" text="hello" id="textbox1" />
-    <br />
+    <fieldset id="existinguser">
+    <legend>Existing User</legend>   
+
+    <label for="existusername"> UserName:</label> 
+    <input name="existusername" id="existusername" />
+    
+    <label for="existpassword">Password:</label>
+    <input name="existpassword" id="existpassword" />
+
+    <button onclick="existAlert()" id="existlogin">Login</button>
+
+    </fieldset>
+    
+    
 </div>
 
 <script src="main.js"></script>
